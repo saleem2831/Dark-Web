@@ -1,5 +1,4 @@
 <html>
-<html>
 
 <head>
 
@@ -19,14 +18,14 @@
   </div>
   <section class="stark-login">
 
-    <form action="" method="">
+    <div class="loginForm" id="loginForm">
       <div id="fade-box">
-        <input type="text" name="username" id="username" placeholder="Username" required>
-        <input type="password" placeholder="Password" required>
+        <input type="text" id="username" placeholder="Username" required>
+        <input type="password" id="password" placeholder="Password" required>
 
-        <button>Log In</button>
+        <button onclick="validateLogin()" >Log In</button>
       </div>
-    </form>
+    </div>
     <div class="hexagons">
 
       <img src="https://media3.giphy.com/media/xTcnSWYZvafyhEACBO/200w.webp?cid=ecf05e478beda3d85576ed93fa8b9380e299e3841661081e&rid=200w.webp" height="768px" width="1366px" />
@@ -50,6 +49,23 @@
   <script src='https://codepen.io/assets/libs/fullpage/jquery.js'></script>
 
   <script src="index.js"></script>
+  <script>
+    function validateLogin() {
+        var username = document.getElementById("username").value;
+        var password = document.getElementById("password").value;
+
+        if (username === "hacker" && password === "hacker") {
+            // alert("Login successful!");
+            window.location.href="homePage.html";
+            // window.location.href = "https://www.google.com"; // Redirect to Google
+
+            // You can redirect the user to another page or perform other actions here
+        } else {
+            alert("Invalid username or password. Please try again.");
+        }
+    }
+</script>
+
 
 </body>
 

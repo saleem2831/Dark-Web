@@ -467,7 +467,7 @@
    z-index: 4;
  }
  
- .stark-login form {
+ .stark-login .loginForm {
    animation: form-entry 3s ease-in-out;
    background: #111;
    background: linear-gradient(#74ebe6, #74ebe6);
@@ -482,7 +482,7 @@
    width: 500px;
    transition: 1s all;
  }
- .stark-login form:hover {
+ .stark-login .loginForm:hover {
    border: 6px solid #74ebe6;
    box-shadow: 0 0 25px #74ebe6;
    transition: 1s all;
